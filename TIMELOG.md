@@ -27,9 +27,10 @@
 		<td><b>Coordination</b></td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>April 12, 2016</td>
+		<td>3 hours</td>
+		<td>Set up project, discussed game plan</td>
+		<td>Met at Starbucks</td>
 	</tr>
+
 </table>
