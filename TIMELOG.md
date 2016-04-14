@@ -12,8 +12,14 @@
 	<tr>
 		<td>April 12, 2016</td>
 		<td>2 hours</td>
-		<td>Set up project, discussed game play</td>
+		<td>Created rough draft of game - including player, triangle enemy, and bullets</td>
 		<td>Met at Starbucks</td>
+	</tr>
+	<tr>
+		<td>April 13, 2016</td>
+		<td>1 hour, 30 minutes</td>
+		<td>Fixed multi-threading issues with triangle enemies and bullets, created rectangle goal box</td>
+		<td>APCS Class Time</td>
 	</tr>
 </table>
 
