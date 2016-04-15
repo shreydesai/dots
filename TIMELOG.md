@@ -38,5 +38,11 @@
 		<td>Set up project, discussed game plan</td>
 		<td>Met at Starbucks</td>
 	</tr>
+	<tr>
+		<td>April 13, 2016</td>
+		<td>1 hour, 30 minutes</td>
+		<td>Drew canvas or picture of game, played with code to make enemy go up and down</td>
+		<td>APCS Class Time</td>
+	</tr>
 
 </table>
