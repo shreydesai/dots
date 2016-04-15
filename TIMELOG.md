@@ -27,6 +27,12 @@
 		<td>Separated player and bullets into model classes, created an Animation interface, and abstract class for enemies</td>
 		<td>Met at Starbucks</td>
 	</tr>
+	<tr>
+		<td>April 15, 2016</td>
+		<td>1 hour, 30 minutes</td>
+		<td>Worked on designing the time sequence for the game, calculated distance between two points to map an angled bullet's trajectory</td>
+		<td>APCS Class Time</td>
+	</tr>
 </table>
 
 ## Kimberly Chen
