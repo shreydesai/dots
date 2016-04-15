@@ -50,5 +50,11 @@
 		<td>Drew canvas or picture of game, played with code to make enemy go up and down</td>
 		<td>APCS Class Time</td>
 	</tr>
+	<tr>
+		<td>April 14, 2016</td>
+		<td>2 hours</td>
+		<td>code the point when the bullet hits the enemy, found the point when the player hits the enemy</td>
+		<td>Met at Starbucks</td>
+	</tr>
 
 </table>
