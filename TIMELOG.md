@@ -21,6 +21,12 @@
 		<td>Fixed multi-threading issues with triangle enemies and bullets, created rectangle goal box</td>
 		<td>APCS Class Time</td>
 	</tr>
+	<tr>
+		<td>April 14, 2016</td>
+		<td>2 hours</td>
+		<td>Separated player and bullets into model classes, created an Animation interface, and abstract class for enemies</td>
+		<td>Met at Starbucks</td>
+	</tr>
 </table>
 
 ## Kimberly Chen
