@@ -33,6 +33,12 @@
 		<td>Worked on designing the time sequence for the game, calculated distance between two points to map an angled bullet's trajectory</td>
 		<td>APCS Class Time</td>
 	</tr>
+	<tr>
+		<td>April 16, 2016</td>
+		<td>2 hours</td>
+		<td>Separated classes into a MVC (model view controller) paradigm, switched to JavaFX AnimationTimer from Timer, updated Sprite interface and Enemy abstract class</td>
+		<td>Facebook Message</td>
+	</tr>
 </table>
 
 ## Kimberly Chen
