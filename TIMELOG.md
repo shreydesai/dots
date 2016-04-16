@@ -62,5 +62,11 @@
 		<td>code the point when the bullet hits the enemy, found the point when the player hits the enemy</td>
 		<td>Met at Starbucks</td>
 	</tr>
+	<tr>
+		<td>April 15, 2016</td>
+		<td>1 hour, 30 minutes</td>
+		<td>Calculated distance between two points, calculated the length of the bullet, caculated the coordinates of the points at the end of the bullet</td>
+		<td>APCS Class Time</td>
+	</tr>
 
 </table>
