@@ -1,18 +1,20 @@
 package model;
 
-import javafx.scene.layout.Pane;
+import javafx.scene.shape.Circle;
 
 public interface Sprite {
     
-    public void draw(Pane pane);
-    
     public void moveUp();
-    
     public void moveDown();
-    
     public void moveLeft();
-    
     public void moveRight();
     
-    public String toString();
+    public Circle getNode();
+    
+    public double getR();
+    public double getX();
+    public double getY();
+    
+    public void setX(double cx);
+    public void setY(double cy);
 }

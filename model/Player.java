@@ -1,69 +1,88 @@
 package model;
 
-import javafx.scene.layout.Pane;
 import javafx.scene.shape.Circle;
 
 public class Player implements Sprite {
     
-    private double cx, cy, r, dy, dx;
+    private final static int WIDTH = 1000;
+    private final static int HEIGHT = 800;
+    private final static int DELTA = 20;
+    
+    private double cx, cy, r;
     private Circle circle;
-    private Canvas canvas;
-
-    public Player(double cx, double cy, double r, double dy, double dx) {
+    
+    public Player(double cx, double cy, double r) {
         this.cx = cx;
         this.cy = cy;
         this.r = r;
-        this.dy = dy;
-        this.dx = dx;
         
         circle = new Circle(this.cx, this.cy, this.r);
-        canvas = new Canvas();
-    }
-    
-    @Override
-    public void draw(Pane pane) {
-        pane.getChildren().add(circle);
     }
     
     @Override
     public void moveUp() {
-        if (circle.getCenterY() - circle.getRadius() - dy < 0) {
+        if (getY() - getR() - DELTA < 0) {
             return;
         } else {
-            circle.setCenterY(circle.getCenterY() - dy);
+            setY(getY() - DELTA);
         }
     }
     
     @Override
     public void moveDown() {
-        if (circle.getCenterY() + circle.getRadius() + dy > canvas.getHeight()) {
+        if (getY() + getR() + DELTA > HEIGHT) {
             return;
         } else {
-            circle.setCenterY(circle.getCenterY() + dy);
+            setY(getY() + DELTA);
         }
     }
     
     @Override
     public void moveLeft() {
-        if (circle.getCenterX() - circle.getRadius() - dx < 0) {
+        if (getX() - getR() - DELTA < 0) {
             return;
         } else {
-            circle.setCenterX(circle.getCenterX() - dx);
-        }
-    }
-
-    @Override
-    public void moveRight() {
-        if (circle.getCenterX() + circle.getRadius() + dx > canvas.getWidth()) {
-            return;
-        } else {
-            circle.setCenterX(circle.getCenterX() + dx);
+            setX(getX() - DELTA);
         }
     }
     
     @Override
-    public String toString() {
-        return "Player(" + cx + ", " + cy + ", " + r + ")";
+    public void moveRight() {
+        if (getX() + getR() + DELTA > WIDTH) {
+            return;
+        } else {
+            setX(getX() + DELTA);
+        }
+    }
+    
+    @Override
+    public Circle getNode() {
+        return circle;
+    }
+    
+    @Override
+    public double getR() {
+        return circle.getRadius();
+    }
+    
+    @Override
+    public double getX() {
+        return circle.getCenterX();
+    }
+    
+    @Override
+    public double getY() {
+        return circle.getCenterY();
+    }
+    
+    @Override
+    public void setX(double cx) {
+        circle.setCenterX(cx);
+    }
+    
+    @Override
+    public void setY(double cy) {
+        circle.setCenterY(cy);
     }
 
 }
