@@ -57,7 +57,7 @@ public class Bullet implements Animation {
     private void handleCollision(AnimationTimer timer) {
         for (int i = 0; i < enemies.size(); i++) {
             Circle enemy = (Circle) enemies.get(i);
-            if (collided(enemy)) {
+            if (collided(enemy) && pane.getChildren().contains(enemy)) {
                 timer.stop();
                 pane.getChildren().removeAll(line, enemy);
             }
