@@ -39,6 +39,12 @@
 		<td>Separated classes into a MVC (model view controller) paradigm, switched to JavaFX AnimationTimer from Timer, updated Sprite interface and Enemy abstract class</td>
 		<td>Facebook Message</td>
 	</tr>
+	<tr>
+		<td>April 17, 2016</td>
+		<td>2 hours</td>
+		<td>Added a multithreaded process to add enemies to the frame, fixed a bullet to enemy collision bug</td>
+		<td>Facebook Message</td>
+	</tr>
 </table>
 
 ## Kimberly Chen
