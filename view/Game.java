@@ -6,6 +6,7 @@ import javafx.event.EventHandler;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 
 public class Game {
@@ -21,8 +22,7 @@ public class Game {
         pane = new Pane();
         scene = new Scene(pane, WIDTH, HEIGHT);
         
-        // TODO: Add CSS for each circle and link the
-        // style sheet to this class
+        scene.getStylesheets().add("view/style.css");
     }
     
     public void setElement(Node node) {
@@ -35,6 +35,10 @@ public class Game {
     
     public void setKeyListener(EventHandler<KeyEvent> event) {
         scene.setOnKeyPressed(event);
+    }
+    
+    public void setMouseListener(EventHandler<MouseEvent> event) {
+        scene.setOnMouseClicked(event);
     }
     
     public Pane getPane() {

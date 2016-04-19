@@ -8,11 +8,23 @@ public class RedEnemy extends Enemy {
 
     public RedEnemy(Pane pane, double cx, double cy, double r) {
         super(pane, cx, cy, r);
+        this.getNode().getStyleClass().add("red-enemy");
+        this.getNode().setId("Red");
+    }
+    
+    @Override
+    public void start() {
+        return;
     }
 
     @Override
     public int getPoints() {
         return POINTS;
+    }
+    
+    @Override
+    public String toString() {
+        return "Red Enemy";
     }
 
 }

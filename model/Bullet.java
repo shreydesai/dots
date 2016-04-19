@@ -15,15 +15,21 @@ public class Bullet implements Animation {
     private final static int HEIGHT = 800;
     
     private Pane pane;
-    private Circle circle;
     private List<Node> enemies;
     private Line line;
+    private double[] coordinates;
     
-    public Bullet(Circle circle, List<Node> enemies, Pane pane) {
-        this.circle = circle;
+    private boolean right;
+    private double theta;
+    
+    public Bullet(Pane pane, List<Node> enemies, double[] coordinates) {
         this.enemies = enemies;
         this.pane = pane;
-
+        this.coordinates = coordinates;
+        
+        theta = 0;
+        right = true;
+        
         line = getLine();
         pane.getChildren().add(line);
     }
@@ -35,16 +41,49 @@ public class Bullet implements Animation {
             public void handle(long now) {
                 handleOffCanvas(this);
                 handleCollision(this);
-                line.setStartX(line.getStartX() + DELTA);
-                line.setEndX(line.getEndX() + DELTA);
+                
+                if (right) {
+                    line.setStartX(line.getStartX() + DELTA * Math.cos(theta));
+                    line.setEndX(line.getEndX() + DELTA * Math.cos(theta));
+                    line.setStartY(line.getStartY() - DELTA * Math.sin(theta));
+                    line.setEndY(line.getEndY() - DELTA * Math.sin(theta));
+                } else {
+                    line.setStartX(line.getStartX() - DELTA * Math.cos(theta));
+                    line.setEndX(line.getEndX() - DELTA * Math.cos(theta));
+                    line.setStartY(line.getStartY() + DELTA * Math.sin(theta));
+                    line.setEndY(line.getEndY() + DELTA * Math.sin(theta));
+                }
             }
         }.start();
     }
     
     public Line getLine() {
-        double x = circle.getCenterX();
-        double y = circle.getCenterY();
-        return new Line(x, y, x + 10, y);
+        double cx = coordinates[0];
+        double cy = coordinates[1];
+        double px = coordinates[2];
+        double py = coordinates[3];
+        double componentX, componentY;
+        right = px > cx;
+        
+        if (right) {
+            componentX = px - cx;
+            componentY = cy - py;
+            theta = Math.atan(componentY / componentX);
+            return new Line(
+                    cx, cy, 
+                    cx + 10 * Math.cos(theta), 
+                    cy - 10 * Math.sin(theta)
+            );
+        } else {
+            componentX = cx - px;
+            componentY = py - cy;
+            theta = Math.atan(componentY / componentX);
+            return new Line(
+                    cx, cy, 
+                    cx - 10 * Math.cos(theta), 
+                    cy + 10 * Math.sin(theta)
+            );
+        }
     }
     
     private void handleOffCanvas(AnimationTimer timer) {
@@ -55,9 +94,10 @@ public class Bullet implements Animation {
     }
     
     private void handleCollision(AnimationTimer timer) {
-        for (int i = 0; i < enemies.size(); i++) {
+        for (int i = 1; i < enemies.size(); i++) {
             Circle enemy = (Circle) enemies.get(i);
             if (collided(enemy) && pane.getChildren().contains(enemy)) {
+                System.out.println(enemies.get(i).getId());
                 timer.stop();
                 pane.getChildren().removeAll(line, enemy);
             }

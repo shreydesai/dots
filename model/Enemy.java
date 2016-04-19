@@ -1,17 +1,15 @@
 package model;
 
-import javafx.animation.AnimationTimer;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Circle;
 
 public abstract class Enemy implements Sprite, Animation {
     
-    private final static int HEIGHT = 800;
-    private static final double DELTA = 3;
+    protected static final int HEIGHT = 800;
     
-    private double cx, cy, r;
-    private Circle circle;
-    private Pane pane;
+    protected double cx, cy, r;
+    protected Circle circle;
+    protected Pane pane;
     
     public Enemy(Pane pane, double cx, double cy, double r) {
         this.pane = pane;
@@ -20,64 +18,61 @@ public abstract class Enemy implements Sprite, Animation {
         this.r = r;
         
         circle = new Circle(this.cx, this.cy, this.r);
-    }
-    
-    @Override
-    public void start() {
-        new AnimationTimer() {
-
-            @Override
-            public void handle(long now) {
-                if (!pane.getChildren().contains(circle)) {
-                    this.stop();
-                }
-                if (getY() + getR() + DELTA >= HEIGHT) {
-                    setY(0);
-                }
-                setY(getY() + DELTA);
-            }
-            
-        }.start();
+        start();
     }
     
     public abstract int getPoints();
+    public abstract String toString();
+    
+    @Override
+    public abstract void start();
 
+    @Override
     public Circle getNode() {
         return circle;
     }
     
+    @Override
     public double getR() {
         return circle.getRadius();
     }
     
+    @Override
     public double getX() {
         return circle.getCenterX();
     }
     
+    @Override
     public double getY() {
         return circle.getCenterY();
     }
     
+    @Override
     public void setX(double cx) {
         circle.setCenterX(cx);
     }
     
+    @Override
     public void setY(double cy) {
         circle.setCenterY(cy);
     }
     
+    @Override
     public void moveUp() {
         return;
     }
     
+    @Override
     public void moveDown() {
         return;
     }
     
+    @Override
     public void moveLeft() {
         return;
     }
     
+    @Override
     public void moveRight() {
         return;
     }

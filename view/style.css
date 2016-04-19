@@ -1,0 +1,11 @@
+.red-enemy {
+    -fx-fill: #FE6666;
+}
+
+.green-enemy {
+    -fx-fill: #89F91A;
+}
+
+.blue-enemy {
+    -fx-fill: #5151F9;
+}
