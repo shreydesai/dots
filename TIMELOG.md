@@ -51,6 +51,12 @@
 		<td>Worked on an equation to calculate the point of intersection between the end X and Y coordinates of a line with a tangent line on a circle</td>
 		<td>APCS Class Time</td>
 	</tr>
+	<tr>
+		<td>April 19, 2016</td>
+		<td>2 hours</td>
+		<td>Worked on mechanism to track points and learned more about concurrency to handle the points and clock timers</td>
+		<td>Met at Starbucks</td>
+	</tr>
 </table>
 
 ## Kimberly Chen
@@ -103,5 +109,11 @@
 		<td>30 minutes</td>
 		<td>Worked on blueprints for the game menu and appearance (color, position) of the enemies</td>
 		<td>APCS Class Time</td>
+	</tr>
+	<tr>
+		<td>April 19, 2016</td>
+		<td>2 hours</td>
+		<td>Updated Enemy constructors to start their animation sequence when the object is instantiated, added new methods to the Sprite interface and updated accordingly</td>
+		<td>Met at Starbucks</td>
 	</tr>
 </table>
