@@ -57,6 +57,12 @@
 		<td>Worked on mechanism to track points and learned more about concurrency to handle the points and clock timers</td>
 		<td>Met at Starbucks</td>
 	</tr>
+	<tr>
+		<td>April 20, 2016</td>
+		<td>2 hours</td>
+		<td>Added new class for a dialog box and instructions at the beginning of the game</td>
+		<td>Met at Starbucks</td>
+	</tr>
 </table>
 
 ## Kimberly Chen
@@ -114,6 +120,12 @@
 		<td>April 19, 2016</td>
 		<td>2 hours</td>
 		<td>Updated Enemy constructors to start their animation sequence when the object is instantiated, added new methods to the Sprite interface and updated accordingly</td>
+		<td>Met at Starbucks</td>
+	</tr>
+	<tr>
+		<td>April 20, 2016</td>
+		<td>2 hours</td>
+		<td>Created variable/method outline for the dialog box class, wrote rough draft of method that resets the JavaFX canvas</td>
 		<td>Met at Starbucks</td>
 	</tr>
 </table>
