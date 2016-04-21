@@ -1,6 +1,10 @@
 package model;
 
+import java.io.File;
 import java.util.List;
+
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 
 import javafx.animation.AnimationTimer;
 import javafx.scene.Node;
@@ -22,6 +26,8 @@ public class Bullet implements Animation {
     private boolean right;
     private double theta;
     
+    private boolean playShot = true;
+    
     public Bullet(Pane pane, List<Node> enemies, double[] coordinates) {
         this.enemies = enemies;
         this.pane = pane;
@@ -39,6 +45,11 @@ public class Bullet implements Animation {
         new AnimationTimer() {
             @Override
             public void handle(long now) {
+                if (playShot) {
+                    playSound("src/sound/shot.wav");
+                    playShot = false;
+                }
+                
                 handleOffCanvas(this);
                 handleCollision(this);
                 
@@ -86,6 +97,16 @@ public class Bullet implements Animation {
         }
     }
     
+    private void playSound(String path) {
+        try {
+            Clip clip = AudioSystem.getClip();
+            clip.open(AudioSystem.getAudioInputStream(new File(path)));
+            clip.start();
+        } catch (Exception e) {
+            e.printStackTrace(System.out);
+        }   
+    }
+    
     private void handleOffCanvas(AnimationTimer timer) {
         if (disappeared()) {
             timer.stop();
@@ -97,7 +118,7 @@ public class Bullet implements Animation {
         for (int i = 1; i < enemies.size(); i++) {
             Circle enemy = (Circle) enemies.get(i);
             if (collided(enemy) && pane.getChildren().contains(enemy)) {
-                System.out.println(enemies.get(i).getId());
+                playSound("src/sound/hit.wav");
                 timer.stop();
                 pane.getChildren().removeAll(line, enemy);
             }

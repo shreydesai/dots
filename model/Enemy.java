@@ -11,6 +11,10 @@ public abstract class Enemy implements Sprite, Animation {
     protected Circle circle;
     protected Pane pane;
     
+    public Enemy() {
+        
+    }
+    
     public Enemy(Pane pane, double cx, double cy, double r) {
         this.pane = pane;
         this.cx = cx;

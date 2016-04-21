@@ -7,6 +7,10 @@ public class BlueEnemy extends Enemy {
     
     private static final int POINTS = 15;
     private static final int DELTA = 5;
+    
+    public BlueEnemy() {
+        
+    }
 
     public BlueEnemy(Pane pane, double cx, double cy, double r) {
         super(pane, cx, cy, r);

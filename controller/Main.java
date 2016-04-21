@@ -11,7 +11,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        new Controller().start(stage);
+        new Frame().start(stage);
     }
     
 }
