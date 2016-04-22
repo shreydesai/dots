@@ -8,6 +8,7 @@ import java.util.TimerTask;
 import javafx.application.Platform;
 import javafx.scene.Node;
 import javafx.scene.shape.Circle;
+
 import view.Game;
 
 public class Background {

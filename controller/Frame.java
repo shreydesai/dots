@@ -12,12 +12,14 @@ import javafx.scene.Node;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+
 import model.BlueEnemy;
 import model.Bullet;
 import model.Enemy;
 import model.GreenEnemy;
 import model.Player;
 import model.RedEnemy;
+
 import view.InfoBox;
 import view.EndBox;
 import view.Game;
