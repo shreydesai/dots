@@ -1,11 +1,14 @@
+/* Styles the red enemy */
 .red-enemy {
     -fx-fill: #FE6666;
 }
 
+/* Styles the green enemy */
 .green-enemy {
     -fx-fill: #89F91A;
 }
 
+/* Styles the blue enemy */
 .blue-enemy {
     -fx-fill: #5151F9;
 }
