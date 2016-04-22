@@ -63,6 +63,12 @@
 		<td>Added new class for a dialog box and instructions at the beginning of the game</td>
 		<td>Met at Starbucks</td>
 	</tr>
+	<tr>
+		<td>April 21, 2016</td>
+		<td>2 hours</td>
+		<td>Changed the previous class to an interface, added the InfoBox and EndBox classes</td>
+		<td>Met at Starbucks</td>
+	</tr>
 </table>
 
 ## Kimberly Chen
@@ -126,6 +132,12 @@
 		<td>April 20, 2016</td>
 		<td>2 hours</td>
 		<td>Created variable/method outline for the dialog box class, wrote rough draft of method that resets the JavaFX canvas</td>
+		<td>Met at Starbucks</td>
+	</tr>
+	<tr>
+		<td>April 21, 2016</td>
+		<td>2 hours</td>
+		<td>Wrote contents.txt and finished the InfoBox class which creates a Scanner and File object to read the text and put it in the dialog box</td>
 		<td>Met at Starbucks</td>
 	</tr>
 </table>
