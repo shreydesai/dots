@@ -69,6 +69,13 @@
 		<td>Changed the previous class to an interface, added the InfoBox and EndBox classes</td>
 		<td>Met at Starbucks</td>
 	</tr>
+	<tr>
+		<td>April 22, 2016</td>
+		<td>2 hours</td>
+		<td>Integrated instances of the InfoBox and EndBox into the controller and tested whether
+		it appears at the start/end of the game</td>
+		<td>Met at Starbucks</td>
+	</tr>
 </table>
 
 ## Kimberly Chen
@@ -138,6 +145,12 @@
 		<td>April 21, 2016</td>
 		<td>2 hours</td>
 		<td>Wrote contents.txt and finished the InfoBox class which creates a Scanner and File object to read the text and put it in the dialog box</td>
+		<td>Met at Starbucks</td>
+	</tr>
+	<tr>
+		<td>April 22, 2016</td>
+		<td>2 hours</td>
+		<td>Sketched a new view of the InfoBox and EndBox classes and changed the view accordingly - also edited some methods in the DialogBox interface</td>
 		<td>Met at Starbucks</td>
 	</tr>
 </table>
