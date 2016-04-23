@@ -123,7 +123,10 @@ Sound file for when the bullet hits an enemy.
 ## GUI Appearance
 
 ### Info Box
+<img src="http://i.imgur.com/GYUhYd2.jpg" width=70%>
 
 ### Main Canvas
+<img src="http://i.imgur.com/jFaXcxd.jpg" width=70%>
 
 ### End Box
+<img src="http://i.imgur.com/5FGEzly.jpg" width=70%>
