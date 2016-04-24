@@ -76,6 +76,12 @@
 		it appears at the start/end of the game</td>
 		<td>Met at Starbucks</td>
 	</tr>
+	<tr>
+		<td>April 23, 2016</td>
+		<td>2 hours</td>
+		<td>Fixed some issues in the Enemy class which prevented the enemy from returning to the canvas after going off of the screen</td>
+		<td>Met at Starbucks</td>
+	</tr>
 </table>
 
 ## Kimberly Chen
@@ -151,6 +157,12 @@
 		<td>April 22, 2016</td>
 		<td>2 hours</td>
 		<td>Sketched a new view of the InfoBox and EndBox classes and changed the view accordingly - also edited some methods in the DialogBox interface</td>
+		<td>Met at Starbucks</td>
+	</tr>
+	<tr>
+		<td>April 23, 2016</td>
+		<td>2 hours</td>
+		<td>Deleted some methods in the Animation interface, fixed conflicts between the Background and Frame controller classes</td>
 		<td>Met at Starbucks</td>
 	</tr>
 </table>
