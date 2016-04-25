@@ -82,6 +82,12 @@
 		<td>Fixed some issues in the Enemy class which prevented the enemy from returning to the canvas after going off of the screen</td>
 		<td>Met at Starbucks</td>
 	</tr>
+	<tr>
+		<td>April 24, 2016</td>
+		<td>2 hours</td>
+		<td>Changed sounds for enemies and collision to .wav format, deleted extra methods in the Sprite interface</td>
+		<td>Facebook Message</td>
+	</tr>
 </table>
 
 ## Kimberly Chen
@@ -164,5 +170,11 @@
 		<td>2 hours</td>
 		<td>Deleted some methods in the Animation interface, fixed conflicts between the Background and Frame controller classes</td>
 		<td>Met at Starbucks</td>
+	</tr>
+	<tr>
+		<td>April 24, 2016</td>
+		<td>2 hours</td>
+		<td>Cleaned up code in the Main class, fixed the Controller class so that it did not inherit from the JavaFX application package</td>
+		<td>Facebook Message</td>
 	</tr>
 </table>
