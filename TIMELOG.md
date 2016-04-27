@@ -88,6 +88,12 @@
 		<td>Changed sounds for enemies and collision to .wav format, deleted extra methods in the Sprite interface</td>
 		<td>Facebook Message</td>
 	</tr>
+	<tr>
+		<td>April 26, 2016</td>
+		<td>2 hours</td>
+		<td>Fixed bug in Enemy class where the threads would not stop, added method to the Animation interface</td>
+		<td>Facebook Message</td>
+	</tr>
 </table>
 
 ## Kimberly Chen
@@ -175,6 +181,12 @@
 		<td>April 24, 2016</td>
 		<td>2 hours</td>
 		<td>Cleaned up code in the Main class, fixed the Controller class so that it did not inherit from the JavaFX application package</td>
+		<td>Facebook Message</td>
+	</tr>
+	<tr>
+		<td>April 26, 2016</td>
+		<td>2 hours</td>
+		<td>Implemented the new method for the Animation interface in the rest of the Enemy classes</td>
 		<td>Facebook Message</td>
 	</tr>
 </table>
