@@ -94,6 +94,12 @@
 		<td>Fixed bug in Enemy class where the threads would not stop, added method to the Animation interface</td>
 		<td>Facebook Message</td>
 	</tr>
+	<tr>
+		<td>April 27, 2016</td>
+		<td>2 hours</td>
+		<td>Added new timer to the Background class to keep track of how many points the player has at any given point in time</td>
+		<td>Facebook Message</td>
+	</tr>
 </table>
 
 ## Kimberly Chen
@@ -187,6 +193,12 @@
 		<td>April 26, 2016</td>
 		<td>2 hours</td>
 		<td>Implemented the new method for the Animation interface in the rest of the Enemy classes</td>
+		<td>Facebook Message</td>
+	</tr>
+	<tr>
+		<td>April 27, 2016</td>
+		<td>2 hours</td>
+		<td>Deleted extra methods in the main class, changed unreachable or irrelevant code in the Controller class</td>
 		<td>Facebook Message</td>
 	</tr>
 </table>
