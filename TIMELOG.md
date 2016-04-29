@@ -106,6 +106,12 @@
 		<td>Integrated an instance of the Background class in the Controller class, ran the methods to start the game</td>
 		<td>Met at Starbucks</td>
 	</tr>
+	<tr>
+		<td>April 29, 2016</td>
+		<td>2 hours</td>
+		<td>Edited instructions for the InfoBox class, updated Scanner and File objects to split the string on semicolons</td>
+		<td>Met at Starbucks</td>
+	</tr>
 </table>
 
 ## Kimberly Chen
@@ -211,6 +217,12 @@
 		<td>April 28, 2016</td>
 		<td>2 hours</td>
 		<td>Wrote documentation for the Background class, wrote three methods that started the multithreaded process of the timers</td>
+		<td>Met at Starbucks</td>
+	</tr>
+	<tr>
+		<td>April 29, 2016</td>
+		<td>2 hours</td>
+		<td>Fixed error where the EndBox class would not restart a new frame for the game</td>
 		<td>Met at Starbucks</td>
 	</tr>
 </table>
