@@ -100,6 +100,12 @@
 		<td>Added new timer to the Background class to keep track of how many points the player has at any given point in time</td>
 		<td>Facebook Message</td>
 	</tr>
+	<tr>
+		<td>April 28, 2016</td>
+		<td>2 hours</td>
+		<td>Integrated an instance of the Background class in the Controller class, ran the methods to start the game</td>
+		<td>Met at Starbucks</td>
+	</tr>
 </table>
 
 ## Kimberly Chen
@@ -200,5 +206,11 @@
 		<td>2 hours</td>
 		<td>Deleted extra methods in the main class, changed unreachable or irrelevant code in the Controller class</td>
 		<td>Facebook Message</td>
+	</tr>
+	<tr>
+		<td>April 28, 2016</td>
+		<td>2 hours</td>
+		<td>Wrote documentation for the Background class, wrote three methods that started the multithreaded process of the timers</td>
+		<td>Met at Starbucks</td>
 	</tr>
 </table>
