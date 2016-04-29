@@ -2,7 +2,6 @@ package view;
 
 import java.io.File;
 import java.io.IOException;
-
 import java.util.Scanner;
 
 import javafx.scene.control.Alert;
@@ -72,6 +71,9 @@ public class InfoBox implements DialogBox {
     @Override
     public void show() {
         setContentText();
+        
+        // Until the alert box receives an input from the user,
+        // the game will not start
         alert.showAndWait();
     }
 }
