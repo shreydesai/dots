@@ -112,6 +112,12 @@
 		<td>Edited instructions for the InfoBox class, updated Scanner and File objects to split the string on semicolons</td>
 		<td>Met at Starbucks</td>
 	</tr>
+	<tr>
+		<td>May 1, 2016</td>
+		<td>2 hours</td>
+		<td>Added new methods to the Enemy class for moving around the canvas</td>
+		<td>Met at Starbucks</td>
+	</tr>
 </table>
 
 ## Kimberly Chen
@@ -223,6 +229,12 @@
 		<td>April 29, 2016</td>
 		<td>2 hours</td>
 		<td>Fixed error where the EndBox class would not restart a new frame for the game</td>
+		<td>Met at Starbucks</td>
+	</tr>
+	<tr>
+		<td>May 1, 2016</td>
+		<td>2 hours</td>
+		<td>Added and implemented methods in the Enemy class, fixed error where the bullet thread would not end</td>
 		<td>Met at Starbucks</td>
 	</tr>
 </table>
