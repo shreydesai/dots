@@ -3,7 +3,6 @@ package view;
 import java.util.Optional;
 
 import controller.Frame;
-
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.stage.Stage;
@@ -66,11 +65,11 @@ public class EndBox implements DialogBox {
         
         // Adds a different message to the content depending
         // on how many points the user has accumulated
-        if (points < 100) {
+        if (points < 300) {
             prefix = "Weak. ";
-        } else if (points >= 100 && points < 300) {
-            prefix = "Pretty good. ";
         } else if (points >= 300 && points < 500) {
+            prefix = "Pretty good. ";
+        } else if (points >= 500 && points < 700) {
             prefix = "Nice! ";
         } else {
             prefix = "Wow!!! ";
